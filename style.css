@@ -64,6 +64,16 @@ body {
   border-radius: 15px;
 }
 
+.hero-image {
+  width: 80%;
+  height: 70rem;
+
+  background-color: crimson;
+  border-radius: 25px;
+
+  padding: 0em 10em 0em 10em;
+}
+
 /* .logo {
   width: 354px;
   height: 82.5px;
