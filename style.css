@@ -9,26 +9,37 @@
   --colour-black: #000000;
   --colour-eggshell: #c6bfab;
   --colour-eggshell-logo: #f0ead6;
+  --colour-offwhite: #f7f5f1;
   --colour-luxury-brown: #5c5648;
   --font: "Quicksand", sans-serif;
 }
 
 body {
   font-family: var(--font);
-  background-color: var(--colour-black);
-  color: var(--colour-white);
+  /*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
+  background-color: crimson;
   font-weight: 200;
 }
 
+h1 {
+  font-family: "copperplate-condensed", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5em;
+  color: var(--colour-eggshell);
+  font-weight: bold;
+}
+
+#mens-header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--colour-black);
+}
 .home-page {
   background-image: url("images/homeimage.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-/* .mens-page {
-  background-color: var(--colour-eggshell);
-} */
 .mens-page .logo {
   background-color: var(--colour-eggshell-logo);
   border: 10px solid var(--colour-luxury-brown);
@@ -55,7 +66,7 @@ body {
 }
 
 #mens-section {
-  background-color: var(--colour-eggshell);
+  background-color: var(--colour-offwhite);
   min-height: 100%;
 }
 .mens-grid-wrapper {
