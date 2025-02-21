@@ -64,6 +64,15 @@
             </section>
         </main>
     </div>
+    <script>
+        const bgImage = new Image();
+        bgImage.onload = function () {
+          document.body.style.backgroundImage = "url('images/homeimage.png')";
+          document.body.style.backgroundSize = "cover";
+          document.body.style.backgroundPosition = "center";
+        };
+        bgImage.src = "images/homeimage.png";
+      </script>
     <!-- <script src="" async defer></script> -->
   </body>
 </html>
