@@ -28,13 +28,17 @@ h1 {
   font-size: 2.5em;
   color: var(--colour-eggshell);
   font-weight: bold;
+  letter-spacing: 4px;
 }
 
 #mens-header {
   display: flex;
   justify-content: center;
   background-color: var(--colour-black);
+
+  padding: 0.8em 0em 0.8em 0em;
 }
+
 .home-page {
   background-image: url("images/homeimage.png");
   background-size: cover;
