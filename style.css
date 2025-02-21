@@ -16,7 +16,7 @@
 /*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
 body {
   font-family: var(--font);
-  background-color: crimson;
+  background-color: var(--colour-luxury-brown);
   font-weight: 200;
 }
 
@@ -42,7 +42,6 @@ h1 {
   background-image: url("images/homeimage.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--colour-luxury-brown) !important;
 }
 .mens-page .logo {
   background-color: var(--colour-eggshell-logo);
