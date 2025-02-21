@@ -20,15 +20,15 @@ body {
   font-weight: 200;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .home-page {
   background-image: url("images/homeimage.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* .mens-page {
+  background-color: var(--colour-eggshell);
+} */
 .mens-page .logo {
   background-color: var(--colour-eggshell-logo);
   border: 10px solid var(--colour-luxury-brown);
@@ -40,6 +40,24 @@ html {
   color: var(--colour-luxury-brown);
 }
 
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.section-snap {
+  scroll-snap-align: start;
+}
+#home-section {
+  min-height: 100%;
+}
+
+#mens-section {
+  background-color: var(--colour-eggshell);
+  min-height: 100%;
+}
 .mens-grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -53,7 +71,6 @@ html {
 }
 
 .mens-grid-image {
-  margin-top: 30vh;
   max-width: 100%;
   border-radius: 15px;
 }
