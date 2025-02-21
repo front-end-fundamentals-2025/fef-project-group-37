@@ -13,10 +13,9 @@
   --colour-luxury-brown: #5c5648;
   --font: "Quicksand", sans-serif;
 }
-
+/*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
 body {
   font-family: var(--font);
-  /*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
   background-color: crimson;
   font-weight: 200;
 }
