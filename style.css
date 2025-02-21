@@ -17,6 +17,9 @@ body {
   background-color: var(--colour-black);
   color: var(--colour-white);
   font-weight: 200;
+  background-image: url("images/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav-list {
@@ -62,16 +65,6 @@ body {
   background-color: crimson;
 
   border-radius: 15px;
-}
-
-.hero-image {
-  width: 80%;
-  height: 70rem;
-
-  background-color: crimson;
-  border-radius: 25px;
-
-  padding: 0em 10em 0em 10em;
 }
 
 /* .logo {
