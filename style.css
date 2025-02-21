@@ -11,6 +11,7 @@
   --colour-eggshell-logo: #f0ead6;
   --colour-offwhite: #f7f5f1;
   --colour-luxury-brown: #5c5648;
+  --colour-purple: #a45dbb;
   --font: "Quicksand", sans-serif;
 }
 /*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
@@ -52,6 +53,25 @@ h1 {
 }
 .mens-page #logo-tagline {
   color: var(--colour-luxury-brown);
+}
+
+.womens-page .logo {
+  background-color: var(--colour-purple);
+  border: 10px solid var(--colour-eggshell-logo);
+}
+.womens-page #logo-main {
+  color: var(--colour-eggshell-logo);
+}
+.womens-page #logo-tagline {
+  color: var(--colour-eggshell-logo);
+}
+
+.womens-page #mens-header {
+  background-color: var(--colour-purple);
+}
+
+.womens-page #mens-header-txt {
+  color: var(--colour-eggshell-logo);
 }
 
 .scroll-container {
