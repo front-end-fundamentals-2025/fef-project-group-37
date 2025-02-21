@@ -60,8 +60,14 @@ h1 {
   scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
+
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
 }
 
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
 .section-snap {
   scroll-snap-align: start;
 }
