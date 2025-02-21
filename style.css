@@ -42,6 +42,7 @@ h1 {
   background-image: url("images/homeimage.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--colour-luxury-brown);
 }
 .mens-page .logo {
   background-color: var(--colour-eggshell-logo);
