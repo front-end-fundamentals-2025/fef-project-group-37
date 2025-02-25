@@ -55,6 +55,12 @@ h1 {
   color: var(--colour-luxury-brown);
 }
 
+.womens-page {
+  background-image: url("images/womenspage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .womens-page .logo {
   background-color: var(--colour-purple);
   border: 10px solid var(--colour-eggshell-logo);
@@ -115,6 +121,10 @@ h1 {
   border-radius: 15px;
 }
 
+#first-link {
+  padding-left: 5em;
+}
+
 .nav-list {
   display: flex;
   justify-content: left;
@@ -133,7 +143,7 @@ h1 {
 }
 
 .nav-list a {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.1vw, 1.4rem);
   text-decoration: none;
   letter-spacing: 2px;
 
@@ -144,6 +154,7 @@ h1 {
 }
 
 .logo {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 531px;
