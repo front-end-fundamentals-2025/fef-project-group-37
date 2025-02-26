@@ -86,16 +86,17 @@ h1 {
   height: 100vh;
   overflow-y: scroll;
 
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
-  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar */
+  display: none;
 }
 .section-snap {
   scroll-snap-align: start;
 }
+
 #home-section {
   min-height: 100%;
 }
@@ -104,21 +105,51 @@ h1 {
   background-color: var(--colour-offwhite);
   min-height: 100%;
 }
-.mens-grid-wrapper {
+.clothes-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 450px);
-  gap: 8rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
 
-  padding: 10em;
+  grid-column-gap: 10px;
+  /* padding-left: clamp(5em, 15vw, 20em);
+  padding-right: clamp(5em, 15vw, 20em);
+  padding-top: 10em; */
+
+  padding: 5em;
   margin-inline: auto;
+}
+.clothes-grid-item {
+  display: flex;
+  flex-direction: column;
 
-  border-radius: 25px;
+  align-self: flex-start;
+  align-items: center;
+}
+.clothes-grid-image {
+  border-radius: 10px;
+  height: 100%;
+
+  object-fit: scale-down;
 }
 
-.mens-grid-image {
-  max-width: 100%;
-  border-radius: 15px;
+#grid-item-subheader-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  padding-top: 2em;
+
+  text-align: center;
+}
+
+.grid-item-subheader {
+  justify-content: center;
+
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+#grid-item-subheader-bottom {
+  color: var(--colour-purple);
 }
 
 #first-link {
@@ -213,4 +244,20 @@ h1 {
 @font-face {
   font-family: GillSans;
   src: url(Gill-Sands.ttf);
+}
+
+@media only screen and (max-width: 1800px) {
+  .clothes-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    grid-column-gap: 10px;
+    /* padding-left: clamp(5em, 15vw, 20em);
+    padding-right: clamp(5em, 15vw, 20em);
+    padding-top: 10em; */
+
+    padding: 5em;
+    margin-inline: auto;
+  }
 }
