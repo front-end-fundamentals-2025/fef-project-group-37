@@ -3,37 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karakoram - Shopping Cart</title>
-    <link rel="stylesheet" href="style.css" /> 
+    <title>KaraKoram - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="cart.js"></script>
   </head>
   <body class="cart-page">
     <header>
       <nav>
-        <ul>
-          <li><a id="logo-text" href="index.html">Karakoram</a></li>
-          <li><a href="men.html">MEN</a></li>
-          <li><a href="women.html">WOMEN</a></li>
-          <li><a href="sale.html">SALE</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="cart.html">CART</a></li>
+        <ul class="nav-list">
+          <li>
+            <a id="logo-text" href="index.html">KaraKoram</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <div class="cart-container">
-        <h1>Shopping Cart</h1>
+    <main class="cart-container">
+      <h1>Shopping Bag</h1>
+      <p class="item-count"><span id="item-count">0</span> item(s)</p>
+
+      <div class="cart-content">
+        <!-- Left: Cart Items -->
         <div class="cart-items" id="cart-items">
-          <!-----Items dynamically added here from localStorage--->
+          <!-- Items dynamically added from localStorage -->
         </div>
+
+        <!-- Right: Order Summary -->
         <div class="cart-summary">
-          <h2>Order Summary</h2>
+          <h2>Total</h2>
           <p><strong>Subtotal:</strong> <span id="subtotal">€0.00</span></p>
-          <p><strong>Shipping:</strong> Free</p>
-          <p><strong>Total:</strong> <span id="total">€0.00</span></p>
-          <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+          <p><strong>Delivery:</strong> Free</p>
+          <p class="total-price">
+            <strong>Total:</strong> <span id="total">€0.00</span>
+          </p>
+
+          <button class="checkout-button">Checkout</button>
+
+          <p class="support-text">
+            Need help? <a href="contact.html">Contact us</a>
+          </p>
         </div>
       </div>
     </main>
