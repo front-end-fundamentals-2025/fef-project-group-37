@@ -107,16 +107,12 @@ h1 {
 }
 .clothes-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 400px);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
 
-  grid-column-gap: 10px;
-  /* padding-left: clamp(5em, 15vw, 20em);
-  padding-right: clamp(5em, 15vw, 20em);
-  padding-top: 10em; */
-
-  padding: 5em;
-  margin-inline: auto;
+  margin: 8em 10em 0em 10em;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .clothes-grid-item {
   display: flex;
@@ -246,7 +242,7 @@ h1 {
   src: url(Gill-Sands.ttf);
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1200px) {
   .clothes-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
