@@ -242,6 +242,11 @@ h1 {
   src: url(Gill-Sands.ttf);
 }
 
+@font-face {
+  font-family: OptimaLT;
+  src: url(OptimaLT.tff);
+}
+
 @media only screen and (max-width: 1200px) {
   .clothes-grid-wrapper {
     display: grid;
@@ -335,4 +340,3 @@ h1 {
 .support-text a {
   color: var(--colour-purple);
 }
-
