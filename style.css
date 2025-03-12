@@ -264,7 +264,6 @@ h1 {
 
 /* Shopping Cart Page Style*/
 
-/* Cart Page Styling */
 .cart-page {
   background-color: var(--colour-white);
   font-family: var(--font);
@@ -283,7 +282,7 @@ h1 {
   font-family: "copperplate-condensed", serif; /* Ensure this matches the homepage */
   font-weight: 700;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2.5 rem;
   color: var(--colour-black);
   text-decoration: none;
 }
