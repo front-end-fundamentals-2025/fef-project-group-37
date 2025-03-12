@@ -278,16 +278,6 @@ h1 {
   padding: 20px;
 }
 
-/* Logo Font - Matches Homepage */
-#logo-text {
-  font-family: "copperplate-condensed", serif; /* Ensure this matches the homepage */
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: var(--colour-black);
-  text-decoration: none;
-}
-
 /* Cart Main Container */
 .cart-container {
   max-width: 1100px;
