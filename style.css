@@ -244,7 +244,7 @@ h1 {
 
 @font-face {
   font-family: OptimaLT;
-  src: url(OptimaLT.tff);
+  src: url(Optima-LT.tff);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -287,8 +287,6 @@ h1 {
 
 /* Left Side - Shopping Bag */
 .cart-items {
-  font-family: "Optima LT", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial",
-    "sans-serif";
   flex: 2;
   background: var(--colour-offwhite);
   padding: 20px;
@@ -297,6 +295,7 @@ h1 {
 /* Individual Cart Item */
 .cart-item {
   display: flex;
+  gap: 5em;
   align-items: center;
   gap: 15px;
   padding: 20px;
@@ -311,10 +310,11 @@ h1 {
 
 /* Right Side - Order Summary */
 .cart-summary {
+  font-family: "Optima", Helvetica, sans-serif;
   flex: 1;
   background: var(--colour-eggshell);
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .cart-summary h2 {
