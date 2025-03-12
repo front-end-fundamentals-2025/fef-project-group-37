@@ -263,6 +263,8 @@ h1 {
   }
 }
 
+/* ! LUDVIGS LINE GO NO FURTHER ABOVE */
+
 .cart-page {
   background-color: var(--colour-white);
   font-family: var(--font);
@@ -285,6 +287,8 @@ h1 {
 
 /* Left Side - Shopping Bag */
 .cart-items {
+  font-family: "Optima LT", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial",
+    "sans-serif";
   flex: 2;
   background: var(--colour-offwhite);
   padding: 20px;
