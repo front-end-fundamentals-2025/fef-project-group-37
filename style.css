@@ -310,11 +310,15 @@ h1 {
 
 /* Right Side - Order Summary */
 .cart-summary {
+  display: flex;
+  flex-direction: column;
+
   font-family: "Optima", Helvetica, sans-serif;
   flex: 1;
   background: var(--colour-eggshell);
   padding: 20px;
   text-align: left;
+  gap: 0.5em;
 }
 
 .cart-summary h2 {
