@@ -5,7 +5,7 @@
 
 :root {
   --colour-white: #ffffff;
-  --colour-faded-black: #1c1d20;
+  --colour-faded-black: rgba(0, 0, 0, 0.7);
   --colour-black: #000000;
   --colour-eggshell: #c6bfab;
   --colour-eggshell-logo: #f0ead6;
@@ -14,7 +14,6 @@
   --colour-purple: #a45dbb;
   --font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-/*! NOTE: PLACEHOLDER COLOUR, REMOVE LATER */
 body {
   font-family: var(--font);
   background-color: var(--colour-luxury-brown);
@@ -33,18 +32,21 @@ h1 {
 
 h2 {
   font-family: "Optima", Helvetica, sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
 
   font-weight: 200;
 }
 
 h3 {
   font-family: "Optima", Helvetica, sans-serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
 
   font-weight: 200;
 }
 
+.btn {
+  text-decoration: none;
+}
 #mens-header {
   display: flex;
   justify-content: center;
@@ -191,10 +193,19 @@ h3 {
   color: var(--colour-purple);
 }
 
+#info-colour {
+  border: none;
+  padding: 2em 0em 0em 0em;
+}
+#info-desc {
+  color: var(--colour-faded-black);
+}
 #info-details p {
+  color: var(--colour-faded-black);
   line-height: 1.5em;
 }
 #addcart-btn {
+  text-decoration: none;
   padding: 0;
   margin-top: 2em;
   position: relative;
@@ -214,7 +225,6 @@ h3 {
   font-style: normal;
   font-size: 1.2em;
 
-  text-decoration: none;
   color: var(--colour-eggshell-logo);
   font-weight: bold;
 }
