@@ -131,10 +131,33 @@ h1 {
 
   /* object-fit: scale-down; */
 }
-
 #selected-item-container {
   text-decoration: none;
   color: inherit;
+}
+#selected-item-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  width: 80%;
+  max-width: 60em;
+  margin: 5em 0em 0em 3em;
+
+  justify-content: left;
+}
+
+.selected-item-grid-item img {
+  width: 100%; /* Make images responsive within the grid */
+  height: auto;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+}
+
+#selected-item-info-column {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: right;
 }
 
 #grid-item-subheader-container {
