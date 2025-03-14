@@ -136,12 +136,17 @@ header {
 }
 
 .about-us p {
+  background-color: var(--colour-eggshell);
   display: flex;
   justify-content: center;
-  margin: 5em 2em 5em 2em;
 
-  font-size: 1.2rem;
+  margin-top: 6em;
+  padding: 5em;
+
+  font-size: 1.5rem;
   text-align: justify;
+
+  line-height: 2rem;
 }
 .clothes-grid-wrapper {
   display: grid;
@@ -400,6 +405,9 @@ h3 {
 
     padding: 2em !important;
     margin-inline: auto;
+  }
+  .about-us p {
+    padding: 2em;
   }
 }
 
