@@ -509,9 +509,13 @@ body.showCart .container {
   transform: translateX(-250px);
 }
 .cartTab h1 {
-  padding: 20px;
+  padding-top: 10px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 200;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--header-font);
+  color: var(--colour-purple);
 }
 .cartTab .btn {
   display: flex;
