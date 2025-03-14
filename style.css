@@ -412,7 +412,7 @@ h3 {
 
 .shoppingcart-ico span {
   font-family: var(--header-font);
-  background-color: #a45dbb;
+  background-color: var(--colour-purple);
   color: var(--colour-eggshell-logo);
   width: 18px;
   height: 18px;
@@ -426,9 +426,10 @@ h3 {
   right: -10px;
 }
 .cartTab {
+  font-family: var(--font);
   width: 400px;
-  background-color: var(--colour-faded-black);
-  color: var(--colour-eggshell-logo);
+  background-color: var(--colour-eggshell-logo);
+  color: var(--colour-black);
   position: fixed;
   top: 0;
   right: -400px;
@@ -495,6 +496,15 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
   width: 0;
 }
+
+.checkOut {
+  font-family: var(--font) !important;
+}
+
+.close {
+  font-family: var(--font) !important;
+}
+
 @media only screen and (max-width: 992px) {
   .listProduct {
     grid-template-columns: repeat(3, 1fr);
