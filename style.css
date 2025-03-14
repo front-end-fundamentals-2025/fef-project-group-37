@@ -570,3 +570,19 @@ body.showCart .container {
 .close {
   font-family: var(--font) !important;
 }
+
+@keyframes buttonPress {
+  0% {
+    background-color: var(--colour-purple);
+  }
+  50% {
+    background-color: #ba76cf;
+  }
+  100% {
+    background-color: #c893db;
+  }
+}
+
+#addcart-btn:active {
+  animation: buttonPress 0.3s ease-in-out;
+}
