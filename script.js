@@ -1,5 +1,3 @@
-//
-
 //Shopping Cart
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartBtn = document.querySelector("#addcart-btn");
