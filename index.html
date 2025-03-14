@@ -10,67 +10,90 @@
     <link rel="stylesheet" href="https://use.typekit.net/ind4jzd.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body class="home-page">
-    <header>
-      <nav>
-        <ul class="nav-list">
-          <li>
-            <a id="logo-text" href="index.html">KaraKoram</a>
-          </li>
-          <li>
-            <a href="men.html">MEN</a>
-          </li>
-          <li>
-            <a href="women.html">WOMEN</a>
-          </li>
-          <li>
-            <a href="about.html">ABOUT</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="shoppingcart-ico">
-        <?xml version="1.0" encoding="UTF-8"?>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="20px"
-          height="20px"
-          viewBox="0 0 31 28"
-          version="1.1"
-        >
-          <g id="surface1">
-            <path
-              style="
-                stroke: none;
-                fill-rule: nonzero;
-                fill: rgb(0%, 0%, 0%);
-                fill-opacity: 1;
-              "
-              d="M 0.859375 0 L 0 0 L 0 1.75 L 3.617188 1.75 L 7.773438 20.316406 L 7.921875 21 L 27.554688 21 L 27.554688 19.25 L 9.300781 19.25 L 8.519531 15.75 L 26.695312 15.75 L 30.460938 3.5 L 31 1.75 L 5.382812 1.75 L 5.144531 0.683594 L 4.996094 0 Z M 5.773438 3.5 L 28.660156 3.5 L 25.429688 14 L 8.125 14 Z M 9.902344 23.625 C 10.617188 23.625 11.195312 24.210938 11.195312 24.9375 C 11.195312 25.664062 10.617188 26.25 9.902344 26.25 C 9.1875 26.25 8.609375 25.664062 8.609375 24.9375 C 8.609375 24.210938 9.1875 23.625 9.902344 23.625 Z M 9.902344 28 C 11.566406 28 12.917969 26.628906 12.917969 24.9375 C 12.917969 23.246094 11.566406 21.875 9.902344 21.875 C 8.238281 21.875 6.890625 23.246094 6.890625 24.9375 C 6.890625 26.628906 8.238281 28 9.902344 28 Z M 23.25 24.9375 C 23.25 24.210938 23.828125 23.625 24.542969 23.625 C 25.253906 23.625 25.832031 24.210938 25.832031 24.9375 C 25.832031 25.664062 25.253906 26.25 24.542969 26.25 C 23.828125 26.25 23.25 25.664062 23.25 24.9375 Z M 27.554688 24.9375 C 27.554688 23.246094 26.207031 21.875 24.542969 21.875 C 22.878906 21.875 21.527344 23.246094 21.527344 24.9375 C 21.527344 26.628906 22.878906 28 24.542969 28 C 26.207031 28 27.554688 26.628906 27.554688 24.9375 Z M 27.554688 24.9375 "
-            />
-          </g>
-        </svg>
-        <span>0</span>
-      </div>
-      <div class="cartTab">
-        <h1>Shopping Cart</h1>
-        <div class="listCart"></div>
-        <div class="btn">
-          <button class="close">Close</button>
-          <button class="checkOut">Check Out</button>
-        </div>
-      </div>
-    </header>
+    <div class="scroll-container">
+      <section id="home-section" class="section-snap">
+        <header>
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a id="logo-text" href="index.html">KaraKoram</a>
+              </li>
+              <li>
+                <a href="men.html">MEN</a>
+              </li>
+              <li>
+                <a href="women.html">WOMEN</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="shoppingcart-ico">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20px"
+              height="20px"
+              viewBox="0 0 31 28"
+              version="1.1"
+            >
+              <g id="surface1">
+                <path
+                  style="
+                    stroke: none;
+                    fill-rule: nonzero;
+                    fill: rgb(0%, 0%, 0%);
+                    fill-opacity: 1;
+                  "
+                  d="M 0.859375 0 L 0 0 L 0 1.75 L 3.617188 1.75 L 7.773438 20.316406 L 7.921875 21 L 27.554688 21 L 27.554688 19.25 L 9.300781 19.25 L 8.519531 15.75 L 26.695312 15.75 L 30.460938 3.5 L 31 1.75 L 5.382812 1.75 L 5.144531 0.683594 L 4.996094 0 Z M 5.773438 3.5 L 28.660156 3.5 L 25.429688 14 L 8.125 14 Z M 9.902344 23.625 C 10.617188 23.625 11.195312 24.210938 11.195312 24.9375 C 11.195312 25.664062 10.617188 26.25 9.902344 26.25 C 9.1875 26.25 8.609375 25.664062 8.609375 24.9375 C 8.609375 24.210938 9.1875 23.625 9.902344 23.625 Z M 9.902344 28 C 11.566406 28 12.917969 26.628906 12.917969 24.9375 C 12.917969 23.246094 11.566406 21.875 9.902344 21.875 C 8.238281 21.875 6.890625 23.246094 6.890625 24.9375 C 6.890625 26.628906 8.238281 28 9.902344 28 Z M 23.25 24.9375 C 23.25 24.210938 23.828125 23.625 24.542969 23.625 C 25.253906 23.625 25.832031 24.210938 25.832031 24.9375 C 25.832031 25.664062 25.253906 26.25 24.542969 26.25 C 23.828125 26.25 23.25 25.664062 23.25 24.9375 Z M 27.554688 24.9375 C 27.554688 23.246094 26.207031 21.875 24.542969 21.875 C 22.878906 21.875 21.527344 23.246094 21.527344 24.9375 C 21.527344 26.628906 22.878906 28 24.542969 28 C 26.207031 28 27.554688 26.628906 27.554688 24.9375 Z M 27.554688 24.9375 "
+                />
+              </g>
+            </svg>
+            <span>0</span>
+          </div>
 
-    <main>
-      <div class="home-page-wrapper">
-        <div class="logo">
-          <a id="logo-main">KaraKoram</a>
-          <a id="logo-tagline">Timeless Designs Est. 1887</a>
+          <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart"></div>
+            <div class="btn">
+              <button class="close">Close</button>
+              <button class="checkOut">Check Out</button>
+            </div>
+          </div>
+        </header>
+        <div class="home-page-wrapper">
+          <div class="logo">
+            <a id="logo-main">KaraKoram</a>
+            <a id="logo-tagline">Timeless Designs Est. 1887</a>
+          </div>
         </div>
-      </div>
-
-      <section class="about"></section>
-    </main>
+      </section>
+      <section id="home-section" class="section-snap">
+        <main>
+          <div class="about-us">
+            <div id="mens-header">
+              <h1 id="mens-header-txt">About Us</h1>
+            </div>
+            <p>
+              At KaraKoram, we redefine luxury with a commitment to timeless
+              elegance, exceptional craftsmanship, and unparalleled quality.
+              Every piece in our collection is a testament to the artistry of
+              haute couture, where modern sophistication meets classic
+              refinement. Crafted from the finest materials and designed with
+              meticulous attention to detail, our garments embody exclusivity
+              and individuality. We believe that true luxury is not just about
+              fashion—it’s about a lifestyle, an attitude, and an expression of
+              self-confidence. Our commitment to sustainability and ethical
+              sourcing ensures that every piece not only looks exquisite but
+              also upholds the values of integrity and responsibility. From
+              hand-finished details to custom tailoring, we create more than
+              clothing—we create a statement. Experience the essence of refined
+              luxury. Welcome to KaraKoram.
+            </p>
+          </div>
+        </main>
+      </section>
+    </div>
   </body>
 </html>
