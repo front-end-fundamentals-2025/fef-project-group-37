@@ -101,7 +101,7 @@ header {
 }
 
 .selected-item-page {
-  background-color: #f7f5f1;
+  background-color: var(--colour-offwhite);
   /*!! nav-list a {
      change nav list colour 
   }
@@ -298,8 +298,8 @@ h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 531px;
-  height: 123.75px;
+  width: 35em;
+  height: 8em;
   background-color: var(--colour-black);
   border: 10px solid var(--colour-eggshell);
   align-items: center;
@@ -507,6 +507,12 @@ body.showCart .container {
   }
 }
 
+/* !! LUDVIG CODE */
+
+.creditcard-form {
+  background-color: green;
+}
+
 /* Support Text */
 .support-text {
   margin-top: 15px;
@@ -556,13 +562,12 @@ body.showCart .container {
   height: 80%;
 }
 
-/* Cart Section */
 .checkout-wrapper {
+  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
   gap: 2rem;
 }
 
@@ -578,7 +583,7 @@ body.showCart .container {
   width: 30%;
   max-width: 400px;
   height: calc(100vh - 7rem);
-  background-color: var(--colour-white);
+  background-color: blue;
   padding: 5rem;
   overflow-y: auto;
 }
