@@ -506,10 +506,12 @@ body.showCart .container {
   font-weight: 300;
 }
 .cartTab .btn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cartTab button {
+  font-family: var(--font);
   background-color: var(--colour-purple);
   border: none;
   font-family: Poppins;
@@ -553,11 +555,6 @@ body.showCart .container {
 .listCart::-webkit-scrollbar {
   width: 0;
 }
-
-.checkOut {
-  font-family: var(--font) !important;
-}
-
 .close {
   font-family: var(--font) !important;
 }
