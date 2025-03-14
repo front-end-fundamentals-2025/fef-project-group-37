@@ -426,6 +426,7 @@ h3 {
   right: -10px;
 }
 .cartTab {
+  font-size: 0.8rem;
   font-family: var(--font);
   width: 400px;
   background-color: var(--colour-eggshell-logo);
@@ -459,6 +460,7 @@ body.showCart .container {
   font-family: Poppins;
   font-weight: 500;
   cursor: pointer;
+  border-radius: 15px;
 }
 .cartTab .close {
   background-color: var(--colour-eggshell-logo);
