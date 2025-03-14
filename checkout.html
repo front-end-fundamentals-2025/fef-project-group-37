@@ -1,132 +1,260 @@
-<!DOCTYPE html>
+in the code: <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Final Project Website</title>
+    <title>Checkout</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ind4jzd.css" />
   </head>
-  <body>
-    <nav>
-      <ul class="nav-list">
-        <li>
-          <a id="logo-text" href="index.html">KaraKoram</a>
-        </li>
-        <li>
-          <a id="first-link" href="men.html">MEN</a>
-        </li>
-        <li>
-          <a href="women.html">WOMEN</a>
-        </li>
-        <li>
-          <a href="checkout.html">CHECKOUT</a>
-        </li>
-        <li>
-          <a href="cart.html">CART</a>
-        </li>
-      </ul>
-    </nav>
-    <script src="" async defer></script>
-  </body>
-  
-<main>
-<h1>Checkout</h1>
-  <form class="checkout-form">
-    
-    <!--- Customer info --------->
-    <section class="checkout-section">
-      <h2>Customer Information</h2>
-      <label for="email">Email Adress</label>
-      <input type="email" id="email" name="email" required>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
-    </section>
+  <body class="checkout-page">
+    <script src="./script.js"></script>
 
-  <!----Shipping Adress---->
-    <section class="checkout-section">
-      <h2>Shipping Adress</h2>
-      
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="first-name" required>
+    <main class="container">
+      <h1 class="header">
+        <ion-icon name="cart-outline"></ion-icon> KaraKoram
+      </h1>
 
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name" required>
+      <!-- Wrapping -->
+      <div class="checkout-wrapper">
+        <!-- Left Section  : Checkout Form -->
+        <section class="checkout">
+          <h2 class="section-heading">Checkout</h2>
+          <div class="payment-form">
+            <form action="#">
+              <div class="first-name">
+                <label for="first-name" class="label-default">First name</label>
+                <input
+                  type="text"
+                  name="cardholder-name"
+                  id="cardholder-name"
+                  class="input-default"
+                />
+              </div>
 
-      <label for="address">Address</label>
-      <input type="text" id="address" name="address" required>
+              <div class="last-name">
+                <label for="last-name" class="label-default">Last name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  class="input-default"
+                />
+              </div>
 
-      <label for="city">City</label>
-      <input type="text" id="city" name="city" required>
+              <div class="mobile-number">
+                <label for="mobile-number" class="label-default"
+                  >Mobile number</label
+                >
+                <input
+                  type="text"
+                  name="mobile-number"
+                  id="mobile-number"
+                  class="input-default"
+                />
+              </div>
 
-      <label for="postal-code">Postal Code</label>
-      <input type="text" id="postal-code" name="postal-code" required>
+              <div class="email-adress">
+                <label for="email-adress" class="label-default"
+                  >Email address</label
+                >
+                <input
+                  type="text"
+                  name="email-adress"
+                  id="email-adress"
+                  class="input-default"
+                />
+              </div>
 
-      <label for="country">Country</label>
-      <select id="country" name="country" required>
-        <option value="SE">Sweden</option>
-        <option value="DE">Germany</option>
-        <option value="FR">France</option>
-        <option value="IT">Italy</option>
-        <option value="NL">Netherlands</option>
-        <option value="DE">Denmark</option>
-        <option value="No">Norway</option>
-        <option value="UK">United Kingdom</option>
-        <option value="BE">Belgium</option>
-        <option value="AT">Austria</option>
-        <option value="CH">Switzerland</option>
-        <option value="IE">Ireland</option>
-        <option value="ES">Spain</option>
-      </select>
-      </section>
-        
-        <!-----ADD MORE EUROPEAN CONTRIES maybe!!--->
+              <div class="address">
+                <label for="address" class="label-default">Address</label>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  class="input-default"
+                />
+              </div>
 
-        <!----Shipping Method--->
-        <section class="checkout-section">
-          <h2>Shipping Method</h2>
-          <label>
-            <input type="radio" name="shipping-method" value="standard" checked>
-            Standrard Shipping - Free
-          </label>
-          <label>
-            <input type="radio" name="shipping-method" value="express">
-            Express Shipping - €20.00
-          </label>
+              <div class="postcode">
+                <label for="postcode" class="label-default">Postcode</label>
+                <input
+                  type="text"
+                  name="postcode"
+                  id="postcode"
+                  class="input-default"
+                />
+              </div>
+
+              <div class="town-city">
+                <label for="town-city" class="label-default">Town / City</label>
+                <input
+                  type="text"
+                  name="town-city"
+                  id="town-city"
+                  class="input-default"
+                />
+              </div>
+
+            
+              <select name="country" id="country">
+                <option value="Country">Country</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="England">England</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+              </select>
+            </form>
+          </div>
         </section>
+     </div>
 
-        <!---------Payment Info------>
-        <section class="checkout-section">
-          <h2>Payment Information</h2>
-          <label for="card-name">Name On Card</label>
-          <input type="text" id="card-name" name="card-name" required>
 
-          <label for="card-number">Card Number</label>
-          <input type="text" id="card-number" name="card-number" required>
-
-          <label for="expiry-date">Expiry Date</label>
-          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" name="cvv" required>
-          </section>
-
-      <!--------Order Summary ----->
-            <section Class="checkout-section">
-            <h2>Order Summary</h2>
-            <div class="order-item">
-              <span>Product Name</span>
-              <span>€100.00</span>
+              <!---Creditcard---->
+     <div class="creditcard-form">
+      <section class="checkout">
+        <h2 class="section-heading">Payment</h2>
+        <div class="payment-form">
+          <form action="#">
+            <div class="payment-method">
             </div>
-        </section>
+                <input
+                  type="text"
+                  name="cardholder-name"
+                  id="cardholder-name"
+                  class="input-default"
+                />Cardholder name
+              </div>
 
-        <button type="submit" class="checkout-button">Place Order</button>
-      </form>
-</main>
-            <footer>
-              <p>&copy; 2025 KaraKoram. All rights reserved.</p>
-            </footer>
-          </body>
-          </html>
+              <div class="card-number">
+                <label for="card-number" class="label-default"
+                  >Card number</label
+                >
+                <input
+                  type="number"
+                  name="card-number"
+                  id="card-number"
+                  class="input-default"
+                />
+              </div>
+
+              <div class="input-flex">
+                <div class="expire-date">
+                  <label for="expire-date" class="label-default"
+                    >Expiration date</label
+                  >
+                  <div class="input-default">
+                    <input
+                      type="number"
+                      name="day"
+                      id="expire-date"
+                      placeholder="31"
+                      class="input-default"
+                    />
+                    /
+                    <input
+                      type="number"
+                      name="month"
+                      id="expire-date"
+                      placeholder="12"
+                      min="1"
+                      max="12"
+                      class="input-default"
+                    />
+                  </div>
+                </div>
+
+                <div class="cvv">
+                  <label for="cvv" class="label-default">CVV</label>
+                  <input
+                    type="number"
+                    name="cvv"
+                    id="cvv"
+                    class="input-default"
+                  />
+                </div>
+              </div> 
+          </form>
+        </div>
+      </section>
+     </div>
+
+      
+
+    
+
+        
+
+        <!-- Right : Cart -->
+      <section class="cart">
+          <div class="cart-item-box">
+            <h2 class="section-heading">Order Summary</h2>
+
+            <div class="product-card">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="./images/FAP2678_401V_SMALL.jpg"
+                    alt="Long Dress"
+                    width="80px"
+                    class="product-img"
+                  />
+                </div>
+
+                <div class="detail">
+                  <h4 class="product-name">Long Dress</h4>
+                  <div class="wrapper">
+                    <div class="product-qty">
+                      <button id="decrement">
+                        <ion-icon name="remove-outline"></ion-icon>
+                      </button>
+                      <span id="quantity">1</span>
+                      <button id="increment">
+                        <ion-icon name="add-outline"></ion-icon>
+                      </button>
+                    </div>
+                    <div class="price">
+                      <span id="price">€200.00</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button id="product-close-btn">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="amount">
+                <div class="Subtotal">
+                  <span>Subtotal</span>
+                  <span>€ <span id="Subtotal">200</span></span>
+                </div>
+
+                <div class="Shipping">
+                  <span>Shipping</span>
+                  <span>€ <span id="shipping">0</span></span>
+                </div>
+
+                <div class="total">
+                  <span>Total</span>
+                  <span>€ <span id="Subtotal">200</span></span>
+                </div>
+                <button class="btn btn-primary">
+                  <b>Pay</b> € <span id="payAmount">200.00</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
